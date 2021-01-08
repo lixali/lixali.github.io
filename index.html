@@ -252,6 +252,7 @@
             var qaqarray = HEAPF32.subarray(resultbuffer / Float32Array.BYTES_PER_ELEMENT, resultbuffer / Float32Array.BYTES_PER_ELEMENT + 6 * 20);
 
             var i;
+            var remind_ctx = 'Please wear a mask'; 
             for (i = 0; i < 20; i++) {
                 var label = qaqarray[i * 6 + 0];
                 var prob = qaqarray[i * 6 + 1];
