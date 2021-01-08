@@ -42,8 +42,6 @@
             <h3>This is a project that dectect if a mask is worn</h3>
             <div class="tags">
                 <a class="tag" href="https://facemask-detection.com/" title="English Version">English</a>
-                <a class="tag" href="https://facemask-detection.com/es.html" title="Spanish Version">Español</a>
-                <a class="tag" href="https://facemask-detection.com/cn.html" title="Chinese Version">中文</a>
             </div>
             <div class='remind_box'>
                 <h1 id="remind">Loading...</h1>
@@ -254,7 +252,6 @@
             var qaqarray = HEAPF32.subarray(resultbuffer / Float32Array.BYTES_PER_ELEMENT, resultbuffer / Float32Array.BYTES_PER_ELEMENT + 6 * 20);
 
             var i;
-            var remind_ctx = 'Welcome!'; 
             for (i = 0; i < 20; i++) {
                 var label = qaqarray[i * 6 + 0];
                 var prob = qaqarray[i * 6 + 1];
